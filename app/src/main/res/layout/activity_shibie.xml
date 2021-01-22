@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/蓝色"
+    android:layout_height="match_parent"
+    tools:context=".Xuexi.ShibieActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maincolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@mipmap/fanhui"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能识物"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="250dp"
+        android:id="@+id/image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/style2"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:scaleType="fitXY"
+            android:src="@drawable/head"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="根据我的飞速分析"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:singleLine="false"
+
+        app:layout_constraintLeft_toRightOf="@id/jiqir"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/style2"
+        android:padding="5dp"
+        />
+    <ImageView
+        android:id="@+id/jiqir"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/shiwu"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="@id/say"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jiqir"
+        app:layout_constraintVertical_bias="0.666">
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="我的结果:"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/top1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="1."
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/top"
+            app:layout_constraintHorizontal_bias="0.10"
+            app:layout_constraintStart_toStartOf="@+id/top"
+            app:layout_constraintTop_toBottomOf="@id/top" />
+
+        <TextView
+            android:id="@+id/top11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:maxEms="15"
+            android:singleLine="false"
+            android:text="飞速分析中....."
+            android:textColor="@color/white"
+
+            android:textSize="18dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/top1"
+
+            app:layout_constraintLeft_toRightOf="@id/top1" />
+
+
+        <TextView
+            android:id="@+id/top2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="2."
+            android:textColor="@color/white"
+            android:textSize="25dp"
+
+            app:layout_constraintEnd_toEndOf="@+id/top"
+            app:layout_constraintHorizontal_bias="0.10"
+            app:layout_constraintStart_toStartOf="@+id/top"
+            app:layout_constraintTop_toBottomOf="@id/top1" />
+
+        <TextView
+            android:id="@+id/top22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:maxEms="15"
+            android:singleLine="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="飞速分析中....."
+            app:layout_constraintBottom_toBottomOf="@+id/top2"
+
+
+            app:layout_constraintLeft_toRightOf="@id/top2" />
+
+
+        <TextView
+            android:id="@+id/top3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="3."
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/top"
+            app:layout_constraintHorizontal_bias="0.10"
+            app:layout_constraintStart_toStartOf="@+id/top"
+            app:layout_constraintTop_toBottomOf="@id/top2" />
+
+        <TextView
+            android:id="@+id/top33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:maxEms="15"
+            android:singleLine="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="飞速分析中....."
+            app:layout_constraintBottom_toBottomOf="@+id/top3"
+
+
+            app:layout_constraintLeft_toRightOf="@id/top3" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

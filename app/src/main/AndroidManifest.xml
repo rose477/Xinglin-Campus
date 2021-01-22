@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hnucm18jr.roseapp">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" /> <!-- 百度地图需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 访问网络，进行地图相关业务数据请求，包括地图数据，路线规划，POI检索等 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取网络状态，根据网络状态切换进行数据请求网络转换 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 读取外置存储。如果开发者使用了so动态加载功能并且把so文件放在了外置存储区域，则需要申请该权限，否则不需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 写外置存储。如果开发者使用了离线地图，并且数据写在外置存储区域，则需要申请该权限 -->
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Wow.BianjiActivity"></activity>
+        <activity android:name=".Wode.chaqinActivity" />
+        <activity android:name=".Wode.QiandaoActivity" />
+        <activity android:name=".Shouye.canting.DingdanActivity" />
+        <activity android:name=".Shouye.canting.CaiActivity" />
+        <activity android:name=".Wode.MainActivity" />
+        <activity android:name=".Shouye.Daka.RunActivity" />
+        <activity android:name=".Xuexi.LookActivity" />
+        <activity android:name=".Xuexi.Suoji2Activity" />
+        <activity android:name=".Xuexi.SuopingActivity" />
+        <activity android:name=".Xuexi.KechengActivity" />
+        <activity android:name=".Shouye.ZhongyiActivity" />
+        <activity android:name=".Shouye.Fuwu.FuwuActivity" />
+        <activity android:name=".Shouye.Xinshengzhinan.zhinan5Activity" />
+        <activity android:name=".Shouye.Xinshengzhinan.zhinan4Activity" />
+        <activity android:name=".Shouye.Xinshengzhinan.zhinan3Activity" />
+        <activity android:name=".Shouye.Xinshengzhinan.zhinan2Activity" />
+        <activity android:name=".Shouye.Xinshengzhinan.zhinan1Activity" />
+        <activity android:name=".Shouye.Xinshengzhinan.ZhinanActivity" />
+        <activity android:name=".Xuexi.WriteActivity" />
+        <activity android:name=".Xuexi.BianqianActivity" />
+        <activity android:name=".Shouye.Daka.JidanActivity" />
+        <activity android:name=".Xuexi.LaoshiActivity" />
+        <activity android:name=".Shouye.Shiwuzhao.HuanActivity" />
+        <activity android:name=".Shouye.Shiwuzhao.ShiwuzhaoActivity" />
+        <activity android:name=".Xuexi.ShibieActivity" />
+        <activity android:name=".Shouye.ershou.SellActivity" />
+        <activity android:name=".Shouye.ershou.TaoActivity" />
+        <activity android:name=".Shouye.ershou.ErshouActivity" />
+        <activity android:name=".Shouye.canting.YilouActivity" />
+        <activity android:name=".Shouye.canting.CantingActivity" />
+        <activity android:name=".Shouye.xuanzuo.ZuoweiActivity" />
+        <activity
+            android:name=".Shouye.KebiaoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor" />
+        <activity android:name=".Shouye.Daka.DakaActivity" />
+        <activity android:name=".Shouye.xuanzuo.XuanzuoActivity" />
+
+        <receiver
+            android:name=".HomeReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Wode.AboutActivity" />
+        <activity android:name=".Wode.HelpActivity" />
+        <activity android:name=".Wode.ShezhiActivity" />
+        <activity android:name=".Wode.ZhanghaoaquanActivity" />
+        <activity android:name=".Wode.GerenxinxiActivity" />
+        <activity
+            android:name=".Shouye.zixi.Suojictivity"
+            android:theme="@style/AppTheme3" />
+        <activity android:name=".Shouye.zixi.ZixiActivity" />
+        <activity android:name=".FirstActivity"></activity>
+        <activity android:name=".LoginActivity2" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|locale|layoutDirection"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="65di4vZatPRiFdV8ScQL1eMem8eFNjFE" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.hnucm18jr.roseapp.BmobContentProviderr"
+            android:grantUriPermissions="true"
+            tools:ignore="WrongManifestParent">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- 为调用相机拍照设置内容提供者 -->
+        <provider
+            android:name=".Xuexi.MyFileProvider"
+            android:authorities="com.example.mydemo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:ignore="WrongManifestParent">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

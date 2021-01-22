@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="maincolor">#8f000b</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="text">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="huise">#CAC2C2</color>
+    <color name="红色">#E40808</color>
+    <color name="绿色">#11D529</color>
+    <color name="蓝色">#0D78CD</color>
+    <color name="橙色">#DA8509</color>
+
+    <color name="shiwu">#64B5F6</color>
+    <color name="zhinan">#4DD0E1</color>
+    <color name="fuwu">#FF8A65</color>
+    <color name="zhongyi">#AED581</color>
+
+
+
+</resources>

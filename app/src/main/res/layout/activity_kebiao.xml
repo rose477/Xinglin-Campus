@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#A5D6A7"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".Shouye.KebiaoActivity">
+
+<!--        <com.baidu.lbsapi.panoramaview.PanoramaView-->
+<!--            android:id="@+id/panorama"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:clickable="true" />-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView16"
+                            app:srcCompat="@mipmap/fanhui" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="课表"
+                            android:textColor="#ffffff"
+                            android:textSize="26sp"
+                            android:layout_marginTop="@dimen/dp_10"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.25"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/ershou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本周课表"
+                            android:textColor="@color/white"
+                            android:textSize="60sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.45" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Schedule of the week"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/ershou" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/kebiao22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+                        <TextView android:id="@+id/test_empty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11\n月"
+                            android:gravity="center"
+
+                            android:background="@drawable/course_text_view_bg"
+                            />
+
+                        <TextView android:id="@+id/test_monday_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23日\n周一"
+                            android:layout_toRightOf="@id/test_empty"
+                            android:background="@drawable/course_text_view_bg"
+                            android:gravity="center"
+
+                            />
+
+                        <TextView android:id="@+id/test_tuesday_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24日\n周二"
+                            android:layout_toRightOf="@id/test_monday_course"
+                            android:background="@drawable/course_text_view_bg"
+                            android:gravity="center"
+
+                            />
+
+                        <TextView android:id="@+id/test_wednesday_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25日\n周三"
+                            android:layout_toRightOf="@id/test_tuesday_course"
+                            android:background="@drawable/course_text_view_bg"
+                            android:gravity="center"
+
+                            />
+
+                        <TextView android:id="@+id/test_thursday_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="26日\n周四"
+                            android:layout_toRightOf="@id/test_wednesday_course"
+                            android:background="@drawable/course_text_view_bg"
+                            android:gravity="center"
+
+                            />
+
+                        <TextView android:id="@+id/test_friday_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="27日\n周五"
+                            android:layout_toRightOf="@id/test_thursday_course"
+                            android:background="@drawable/course_text_view_bg"
+                            android:gravity="center"
+
+                            />
+
+                        <TextView android:id="@+id/test_saturday_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="28日\n周六"
+                            android:layout_toRightOf="@id/test_friday_course"
+                            android:background="@drawable/course_text_view_bg"
+                            android:gravity="center"
+
+                            />
+
+                        <TextView android:id="@+id/test_sunday_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="29日\n周日"
+                            android:layout_toRightOf="@id/test_saturday_course"
+                            android:background="@drawable/course_text_view_bg"
+                            android:gravity="center"
+
+                            />
+
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp"
+                    android:id="@+id/test_course_rl"
+                    app:layout_constraintTop_toBottomOf="@id/kebiao22"
+                    >
+                </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

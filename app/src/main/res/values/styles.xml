@@ -1,0 +1,66 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="XUITheme.Phone">
+
+        <!-- 自定义自己的主题样式 -->
+        <item name="android:typeface">monospace</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/maincolor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name= "windowNoTitle">true</item>//无标题.
+        <item name="background">@drawable/bg2</item>
+        <item name="android:windowContentOverlay" >@null</item>//是否有遮盖
+
+
+    </style>
+    <style name="qidong" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name= "android:windowNoTitle">true</item>//无标题.
+        <item name= "android:windowFullscreen">true</item>//全屏即无通知栏
+        <item name="android:windowContentOverlay" >@null</item>//是否有遮盖
+        <item name="android:windowBackground" >@drawable/bg2</item>
+    </style>
+
+    <style name="AppTheme3" parent="XUITheme.Phone">
+
+        <!-- 自定义自己的主题样式 -->
+        <item name="android:typeface">monospace</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/maincolor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name= "windowNoTitle">true</item>//无标题.
+
+        <item name="android:windowContentOverlay" >@null</item>//是否有遮盖
+
+
+    </style>
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="fontPath">@string/default_app_font_path</item>
+    </style>
+    <style name="AppTheme2" parent="XUITheme.Phone">
+        <!-- 自定义自己的主题样式 -->
+        <item name= "windowNoTitle">true</item>//无标题.
+
+        <item name="android:background">@drawable/bg3</item>
+        <item name="android:windowContentOverlay" >@null</item>//是否有遮盖
+<!--        <item name="android:windowBackground" >@drawable/welcome</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#00FFFFFF</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="SuperButton.Primary.Login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginEnd">50dp</item>
+        <item name="sCornersRadius">20dp</item>
+        <item name="sSelectorNormalColor">@color/maincolor</item>
+        <item name="sSelectorPressedColor">@color/maincolor</item>
+        <item name="android:textColor">@color/xui_config_color_white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/data1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <com.hnucm18jr.roseapp.CircleImageView
+        android:id="@+id/haed1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bg2"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/data1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="杏林客服"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/haed1"
+        app:layout_constraintStart_toStartOf="@+id/haed1"
+        app:layout_constraintTop_toBottomOf="@id/haed1" />
+
+
+    <TextView
+        android:id="@+id/message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="hello"
+        android:background="@drawable/text"
+        app:layout_constraintBottom_toBottomOf="@+id/haed1"
+        app:layout_constraintStart_toEndOf="@+id/haed1"
+        app:layout_constraintTop_toTopOf="@+id/haed1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

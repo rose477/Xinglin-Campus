@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80CBC4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maincolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@mipmap/fanhui"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选座"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+      app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+        android:id="@+id/top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/weixuan"/>
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+        android:id="@+id/top2"
+        android:text="未选"
+        android:gravity="center"
+        android:textColor="@color/text"
+       app:layout_constraintLeft_toRightOf="@id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+       />
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+        android:id="@+id/top3"
+        app:layout_constraintLeft_toRightOf="@id/top2"
+        android:layout_marginLeft="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/xuan"/>
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+        android:text="已选"
+        android:gravity="center"
+        android:textColor="@color/text"
+        app:layout_constraintLeft_toRightOf="@id/top3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lst_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/top"
+        app:layout_constraintBottom_toTopOf="@id/txt_seat_selected"
+        android:layout_weight="9"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/txt_seat_selected"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/maincolor"
+        android:gravity="center"
+        android:text="Book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@android:color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

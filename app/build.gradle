@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.hnucm18jr.roseapp"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "x86_64"
+        }
+
+        packagingOptions {
+            exclude "jniLibs/armeabi/libBaiduMapSDK_base_v4_3_1.so"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation files('libs\\BaiduLBS_Android.jar')
+    implementation files('libs\\BmobSDK_3.7.4_20190523.jar')
+    implementation files('libs\\reactive-streams-1.0.3.jar')
+    implementation files('libs\\okhttp-4.10.0-RC1.jar')
+    implementation files('libs\\json-20160810.jar')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //androidx项目
+    implementation 'com.github.xuexiangjys:XUI:1.1.5'
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'//图片加载
+    //悬停布局
+    compile 'androidx.cardview:cardview:1.0.0'//cardview
+
+    implementation 'org.greenrobot:eventbus:3.2.0'// EventBus
+
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile 'com.yalantis:phoenix:1.2.3'
+    compile 'com.github.yalantis:taurus:1.0.2'
+
+    //圆形悬浮按钮
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.github.arcadefire:nice-spinner:1.3.6'//下拉
+
+    implementation 'org.xutils:xutils:3.8.5'
+
+
+}

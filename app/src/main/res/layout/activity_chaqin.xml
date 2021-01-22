@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wode.chaqinActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maincolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/fanhui" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能查寝"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/askBuy_nice_spinner2"
+        android:layout_width="300dp"
+        app:layout_constraintLeft_toRightOf="@+id/xueyaun"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/xueyaun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="选择学院："
+        android:background="@color/white"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/askBuy_nice_spinner2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/askBuy_nice_spinner2" />
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/askBuy_nice_spinner1"
+        android:layout_width="300dp"
+        app:layout_constraintLeft_toRightOf="@+id/xueyaun"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/xueyaun"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/banji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="选择班级："
+
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/askBuy_nice_spinner1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/askBuy_nice_spinner1" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/button5"
+        android:text="一键查寝"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/banji"
+        android:layout_marginTop="@dimen/dp_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+ />
+
+    <TextView
+        android:id="@+id/renshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="班级总人数："
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/renshu2"
+        app:layout_constraintTop_toBottomOf="@id/button6" />
+
+    <TextView
+        android:id="@+id/renshu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        android:layout_marginRight="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@id/button6" />
+
+    <TextView
+        android:id="@+id/rensh3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:text="已签到人数："
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@id/renshu4"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@id/button6" />
+
+    <TextView
+        android:id="@+id/renshu4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="@color/text"
+        android:textSize="18sp"
+      app:layout_constraintLeft_toRightOf="@id/rensh3"
+        app:layout_constraintTop_toBottomOf="@id/button6" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/renshu4"
+        android:background="@color/white">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未签到学生名单"
+            android:textSize="24sp"
+            android:textColor="@color/text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/bottom"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/bottom"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/huise"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/line"
+            />
+        <TextView
+            android:id="@+id/mindan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李国雄  318寝室 18175990510\n\n肖韬 319寝室 15675998641\n\n周易强 315寝室 13762777796\n\n袁锋 316寝室 18773628602
+\n\n许家祺 502寝室 15374265437"
+            android:textColor="@color/text"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            android:layout_marginTop="@dimen/dp_10"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/liujie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:text="\n\n刘杰  316寝室 18175915460"
+            app:layout_constraintTop_toBottomOf="@id/mindan"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="20sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
